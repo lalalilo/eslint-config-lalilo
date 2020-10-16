@@ -11,5 +11,8 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 3"
-}
+  },
+  "devDependencies": {
+    "semantic-release": "^17.2.1"
+  }
 }
