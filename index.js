@@ -5,7 +5,19 @@ module.exports = {
       'react-app',
     ],
     rules: {
-      '@typescript-eslint/strict-boolean-expressions': 'error',
-      '@typescript-eslint/no-use-before-define': 'off'
-    },
+      '@typescript-eslint/strict-boolean-expressions': [
+        'error',
+        {
+          allowString: true,
+          allowNumber: true,
+          allowNullableObject: true,
+          allowNullableBoolean: true,
+          allowNullableString: true,
+          allowNullableNumber: false,
+          allowAny: false,
+          allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
+        },
+      ],
+      'no-use-before-define': 'off',
+    }
   }
